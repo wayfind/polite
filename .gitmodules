@@ -1,0 +1,9 @@
+[submodule "vimfiles/bundle/nerdtree"]
+	path = vimfiles/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vimfiles/bundle/snipmate"]
+	path = vimfiles/bundle/snipmate
+	url = https://github.com/wayfind/snipmate.vim
+[submodule "vimfiles/bundle/zencoding"]
+	path = vimfiles/bundle/zencoding
+	url = https://github.com/mattn/zencoding-vim
