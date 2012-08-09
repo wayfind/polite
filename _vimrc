@@ -1,3 +1,4 @@
+"首先引入包管理插件
 filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
@@ -14,7 +15,7 @@ set guioptions-=T
 set modelines=0
 
 "解决中文乱码问题
-set fileencodings=utf-8,gb2312,gbk,gb18030
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,big5
 set termencoding=utf-8
 set encoding=prc
 
@@ -36,8 +37,10 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+set statusline=%<[%n]\%F\%h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}][%{&ff}][ASCII=\%03.3b]\%-10.(%l,%c%V%)\%P
+
 set relativenumber
-set undofile
+"set undofile
 
 let mapleader = ","
 
@@ -53,6 +56,7 @@ set hlsearch
 nnoremap <leader><space> :noh<cr>
 
 au FocusLost * :wa
+
 
 nnoremap <leader>1 :set filetype=xhtml<cr>
 nnoremap <leader>2 :set filetype=css<cr>
