@@ -1,4 +1,4 @@
-"Ê×ÏÈÒıÈë°ü¹ÜÀí²å¼ş
+"é¦–å…ˆå¼•å…¥åŒ…ç®¡ç†æ’ä»¶
 filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
@@ -7,6 +7,8 @@ set nocompatible
 set modelines=0
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
+
+"ä½¿é¼ æ ‡ç”¨èµ·æ¥è±¡å¾®è½¯ Windows
 behave mswin
 colo desert
 set nobackup
@@ -14,12 +16,12 @@ set autoindent
 set guioptions-=T
 set modelines=0
 
-"½â¾öÖĞÎÄÂÒÂëÎÊÌâ
+"è§£å†³ä¸­æ–‡ä¹±ç é—®é¢˜
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,big5
 set termencoding=utf-8
 set encoding=prc
 
-"ÉèÖÃtab¿í¶È
+"è®¾ç½®tabå®½åº¦
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -44,7 +46,7 @@ set relativenumber
 
 let mapleader = ","
 
-"Ñ±·şVimµÄÄ¬ÈÏËÑË÷ÕıÔò±í´ïÊ½
+"é©¯æœVimçš„é»˜è®¤æœç´¢æ­£åˆ™è¡¨è¾¾å¼
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -62,20 +64,20 @@ nnoremap <leader>1 :set filetype=xhtml<cr>
 nnoremap <leader>2 :set filetype=css<cr>
 nnoremap <leader>3 :set filetype=javascript<cr>
 
-"tabÇĞ»»
+"tabåˆ‡æ¢
 map <C-right>   :tabnext<cr>
 map <C-left>   :tabprevious<cr>
 
- "Æ¥ÅäÀ¨ºÅµÄ¹æÔò£¬Ôö¼ÓÕë¶ÔhtmlµÄ<>
+ "åŒ¹é…æ‹¬å·çš„è§„åˆ™ï¼Œå¢åŠ é’ˆå¯¹htmlçš„<>
 set matchpairs=(:),{:},[:],<:>
-"ÈÃÍË¸ñ£¬¿Õ¸ñ£¬ÉÏÏÂ¼ıÍ·Óöµ½ĞĞÊ×ĞĞÎ²Ê±×Ô¶¯ÒÆµ½ÏÂÒ»ĞĞ£¨°üÀ¨insertÄ£Ê½£©
+"è®©é€€æ ¼ï¼Œç©ºæ ¼ï¼Œä¸Šä¸‹ç®­å¤´é‡åˆ°è¡Œé¦–è¡Œå°¾æ—¶è‡ªåŠ¨ç§»åˆ°ä¸‹ä¸€è¡Œï¼ˆåŒ…æ‹¬insertæ¨¡å¼ï¼‰
 set whichwrap=b,s,<,>,[,]
 
-"³õÊ¼´°¿ÚµÄ¿í¶È
+"åˆå§‹çª—å£çš„å®½åº¦
 set columns=175
-"³õÊ¼´°¿ÚµÄ¸ß¶È
+"åˆå§‹çª—å£çš„é«˜åº¦
 set lines=45
-"³õÊ¼´°¿ÚµÄÎ»ÖÃ
+"åˆå§‹çª—å£çš„ä½ç½®
 winpos 52 42
 
 "Nerd tree
