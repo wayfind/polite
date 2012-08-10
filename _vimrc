@@ -1,4 +1,4 @@
-"首先引入包管理插件
+"首先引入包管理插件需要暂时关闭filetype
 filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
@@ -17,9 +17,6 @@ set modelines=0
 "解决中文乱码问题
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,big5
 set termencoding=utf-8
-if has("win32")
-    set encoding=prc
-endif
 
 "设置tab宽度
 set tabstop=4
@@ -74,15 +71,34 @@ set whichwrap=b,s,<,>,[,]
 "Nerd tree
 nmap <silent> <leader>nt :NERDTreeToggle .<cr>
 
+"CtrlP插件，模拟Sublime Ctrl + P功能
+let g:ctrlp_map = '<C-P>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'rc'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
+set wildignore+=tmp\*,*.swp,*.zip,*.exe   " Windows
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+  \ 'file': '\.exe$\|\.so$\|\.dll$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+
 if has('win32')
     source $VIMRUNTIME/vimrc_example.vim
     source $VIMRUNTIME/mswin.vim
+
     "初始窗口的宽度
     set columns=125
+    
     "初始窗口的高度
     set lines=45
+
     "初始窗口的位置
     winpos 52 42
+
+    set encoding=prc
+
     set diffexpr=MyDiff()
     function! MyDiff()
         let opt = '-a --binary '

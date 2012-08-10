@@ -7,3 +7,6 @@
 [submodule "vimfiles/bundle/zencoding"]
 	path = vimfiles/bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim
+[submodule "vimfiles/bundle/ctrlp.vim"]
+	path = vimfiles/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
