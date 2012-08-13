@@ -1,4 +1,17 @@
+#!/bin/sh
 git submodule init
 git submodule update
-ln _vimrc ~/.vimrc
-ln -s ./vimfiles/ ~/.vim
+
+if [ -f ~/.vimrc ] ;
+    then
+        echo "~/.vimrc exists, please backup first"
+    else
+        ln -s `pwd`/_vimrc ~/.vimrc
+fi
+
+if [ -d ~/.vim ] ;
+    then
+        echo "~/.vim exists, please backup first"
+    else
+        ln -s `pwd`/vimfiles/ ~/.vim
+fi
