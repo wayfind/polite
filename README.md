@@ -3,8 +3,31 @@
 Polite是一个为前端开发者量身打造的Vim配置和插件精选集
 
 ##安装Polite
-windows:从github上clone代码后将文件拷贝到vim安装目录,与vim73目录平级，覆盖原来vimfiles目录即可。
-mac & linux：从github上clone代码后执行./install即可。install脚本将在用户目录下建立两个软链接到工程目录。
+
+* windows:
+
+    git clone https://github.com/wayfind/polite.git
+    git submodule init
+    git submodule update
+
+从github上clone代码后将文件拷贝到vim安装目录,与vim73目录平级，覆盖原来vimfiles目录即可。
+
+* mac & linux：
+
+    git clone https://github.com/wayfind/polite.git
+    ./install
+
+从github上clone代码后执行./install即可。install脚本将在用户目录下建立两个软链接到工程目录。
+
+##更新Polite
+
+Polite使用了Git submodule做工程管理，每次更新需要执行以下命令
+
+    git pull
+    git submodule init
+    git submodule update
+
+更多细节，请了解git submodule
 
 ##为什么会有Polite
 
@@ -28,7 +51,7 @@ mac & linux：从github上clone代码后执行./install即可。install脚本将
 
 代码片段：最后，编辑器应该具备比较完善的自动完成能力,代码片段或者模板是一种不错的方式。选择了优秀插件snipmate来做片段管理。
 
-    使用方法:以js为例，打开一个js文件。到空行输入fun<tab>，即发现vim已经输入了完整的function模板信息，通过tab键在各输入域切换。详细帮助请查阅help snipmate或者自行搜索。
+    以js为例，打开一个js文件。到空行输入fun<tab>，即发现vim已经输入了完整的function模板信息，通过tab键在各输入域切换。详细帮助请查阅help snipmate或者自行搜索。
 
 
 
