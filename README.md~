@@ -3,7 +3,6 @@
 Polite是一个为前端开发者量身打造的Vim配置和插件精选集
 
 ##安装Polite
-
 * windows:
 
     git clone https://github.com/wayfind/polite.git
@@ -11,7 +10,6 @@ Polite是一个为前端开发者量身打造的Vim配置和插件精选集
     git submodule update
 
 从github上clone代码后将文件拷贝到vim安装目录,与vim73目录平级，覆盖原来vimfiles目录即可。
-
 * mac & linux：
 
     git clone https://github.com/wayfind/polite.git
