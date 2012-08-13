@@ -37,6 +37,7 @@ set laststatus=2
 set statusline=%<[%n]\%F\%h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}][%{&ff}][ASCII=\%03.3b]\%-10.(%l,%c%V%)\%P
 
 set relativenumber
+set syntax=enable
 "set undofile
 
 let mapleader = ","
@@ -51,8 +52,6 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
-
-au FocusLost * :wa
 
 nnoremap <leader>1 :set filetype=xhtml<cr>
 nnoremap <leader>2 :set filetype=css<cr>
