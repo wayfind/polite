@@ -6,10 +6,9 @@ filetype plugin indent on
 set nocompatible
 set modelines=0
 
-"使鼠标用起来象微软 Windows
-"behave mswin
 colo desert
 set nobackup
+set noswf
 set autoindent
 set guioptions-=T
 set modelines=0
@@ -23,7 +22,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-
 set scrolloff=3
 set showmode
 set showcmd
