@@ -1,17 +1,27 @@
 #!/bin/sh
 git submodule init
 git submodule update
-
+unamestr=`uname -o`
+if [[ "$unamestr" == 'Cygwin' ]]; then
+    echo 'Cygwin! copying file into home dirctory.'
+    cp -f  _vimrc $USERPROFILE
+    cp -fr  vimfiles $USERPROFILE
+    echo 'Cygiwn! copy finished'
+fi
 if [ -f ~/.vimrc ] ;
-    then
-        echo "~/.vimrc exists, please backup first"
-    else
-        ln -s `pwd`/_vimrc ~/.vimrc
+then
+    mv -f ~/.vimrc ~/.vimrc_backup
 fi
 
 if [ -d ~/.vim ] ;
-    then
-        echo "~/.vim exists, please backup first"
-    else
-        ln -s `pwd`/vimfiles/ ~/.vim
+then
+    mv -f ~/.vim ~/.vim_backup
 fi
+
+ln -f `pwd`/_vimrc ~/.vimrc
+ln -sf `pwd`/vimfiles/ ~/.vim
+
+echo 'insall SUCCEESS!'
+
+
+

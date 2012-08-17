@@ -1,0 +1,8 @@
+#!/bin/sh
+unamestr=`uname -o`
+if [[ "$unamestr" == 'Cygwin' ]]; then
+    rm  $USERPROFILE\\_vimrc
+    rm  -fr $USERPROFILE\\vimfiles
+fi
+rm ~/.vimrc
+rm -fr ~/.vim
