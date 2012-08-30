@@ -3,6 +3,7 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+
 if has('win32')
     source $VIMRUNTIME/vimrc_example.vim
     source $VIMRUNTIME/mswin.vim
@@ -43,7 +44,6 @@ if has('win32')
         silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
     endfunction
 endif
-
 syntax enable
 set nocompatible
 set modelines=0
@@ -56,7 +56,7 @@ set guioptions-=T
 set modelines=0
 
 "解决中文乱码问题
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,big5
+set fileencodings=utf-8,cp936,gb18030,gbk,big5
 set termencoding=utf-8
 
 "设置tab宽度
@@ -79,7 +79,6 @@ set laststatus=2
 set statusline=%<[%n]\%F\%h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}][%{&ff}][ASCII=\%03.3b]\%-10.(%l,%c%V%)\%P
 
 set relativenumber
-set syntax=enable
 "set undofile
 
 let mapleader = ","
