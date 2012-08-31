@@ -10,12 +10,12 @@ if [[ "$unamestr" == 'Cygwin' ]]; then
 fi
 if [ -f ~/.vimrc ] ;
 then
-    mv -f ~/.vimrc ~/.vimrc_backup
+    rm ~/.vimrc
 fi
 
 if [ -d ~/.vim ] ;
 then
-    mv -f ~/.vim ~/.vim_backup
+    rm  ~/.vim
 fi
 
 ln -f `pwd`/_vimrc ~/.vimrc

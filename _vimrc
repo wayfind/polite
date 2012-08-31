@@ -48,10 +48,17 @@ syntax enable
 set nocompatible
 set modelines=0
 
-colo desert
+colorscheme solarized
+if has('gui_running')
+    set background=dark
+else
+    set background=dark
+endif
+
 set nobackup
 set noswf
 set autoindent
+set guifont=Envy_Code_R_VS:h12:cANSI
 set guioptions-=T
 set modelines=0
 
