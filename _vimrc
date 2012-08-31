@@ -108,6 +108,8 @@ nnoremap <leader>3 :set filetype=javascript<cr>
 "tab切换
 map <C-right>   :tabnext<cr>
 map <C-left>   :tabprevious<cr>
+map <D-right> :tabn<cr> 
+map <D-left> :tabp<cr> 
 
  "匹配括号的规则，增加针对html的<>
 set matchpairs=(:),{:},[:],<:>
