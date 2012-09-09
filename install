@@ -15,7 +15,7 @@ fi
 
 if [ -d ~/.vim ] ;
 then
-    rm  ~/.vim
+    rm -fr  ~/.vim
 fi
 
 ln -f `pwd`/_vimrc ~/.vimrc

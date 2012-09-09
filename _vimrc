@@ -48,7 +48,7 @@ syntax enable
 set nocompatible
 set modelines=0
 
-colorscheme solarized
+colorscheme desert
 if has('gui_running')
     set background=dark
 else
