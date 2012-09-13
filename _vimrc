@@ -52,7 +52,7 @@ colorscheme desert
 if has('gui_running')
     set background=dark
 else
-    set background=dark
+    set background=light
 endif
 
 set nobackup
