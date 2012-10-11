@@ -19,3 +19,6 @@
 [submodule "easymotion"]
 	path = easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
+[submodule "vimfiles/bundle/easymotion"]
+	path = vimfiles/bundle/easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
