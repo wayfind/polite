@@ -16,3 +16,6 @@
 [submodule "vimfiles/bundle/vim-javascript"]
 	path = vimfiles/bundle/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
+[submodule "easymotion"]
+	path = easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git

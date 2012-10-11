@@ -58,7 +58,6 @@ endif
 set nobackup
 set noswf
 set autoindent
-set guifont=Envy_Code_R_VS:h12:cANSI
 set guioptions-=T
 set modelines=0
 
