@@ -22,3 +22,6 @@
 [submodule "vimfiles/bundle/easymotion"]
 	path = vimfiles/bundle/easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
+[submodule "vimfiles/bundle/surround"]
+	path = vimfiles/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
