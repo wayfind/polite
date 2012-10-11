@@ -84,7 +84,7 @@ set backspace=indent,eol,start
 set laststatus=2
 set statusline=%<[%n]\%F\%h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}][%{&ff}][ASCII=\%03.3b]\%-10.(%l,%c%V%)\%P
 
-set relativenumber
+"set number
 "set undofile
 
 let mapleader = ","
