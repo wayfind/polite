@@ -84,7 +84,7 @@ set backspace=indent,eol,start
 set laststatus=2
 set statusline=%<[%n]\%F\%h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}][%{&ff}][ASCII=\%03.3b]\%-10.(%l,%c%V%)\%P
 
-"set number
+set number
 "set undofile
 
 let mapleader = ","
@@ -107,8 +107,6 @@ nnoremap <leader>3 :set filetype=javascript<cr>
 "tab切换
 map <C-right>   :tabnext<cr>
 map <C-left>   :tabprevious<cr>
-map <D-right> :tabn<cr> 
-map <D-left> :tabp<cr> 
 
  "匹配括号的规则，增加针对html的<>
 set matchpairs=(:),{:},[:],<:>
@@ -128,4 +126,5 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
-
+nmap f :call EasyMotion#WB(0, 0)<CR>
+nmap F  :call EasyMotion#WB(0, 1)<CR>
